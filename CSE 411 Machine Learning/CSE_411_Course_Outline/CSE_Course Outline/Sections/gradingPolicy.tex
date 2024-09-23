@@ -1,0 +1,19 @@
+\section{Grading Policy}
+
+%%%%%%%%%%%%%%%% DO NOT MODIFY THE FOLLOWING CODE %%%%%%%%%%%%%
+\pgfplotstabletypeset[col sep=comma,
+ignore chars={\"},
+column type=l,
+trim cells=true,
+header=true, 
+columns={Marks Obtained, Letter Grade, Numerical Equivalent, Definition}, 
+columns/Marks Obtained/.style={string type,column type=l, column name = {\textbf{Marks Obtained}}},
+columns/Letter Grade/.style={column type=c,string type, column name = {\textbf{Letter Grade}}},
+columns/Numerical Equivalent/.style={column type=c,string type, column name = {\textbf{Numerical Evaluation}}},
+columns/Definition/.style={string type, , column name = {\textbf{Definition}}},
+every head row/.style={before row=\toprule, after row=\midrule}, 
+every last row/.style={after row=\bottomrule},
+every even row/.style={before row={\rowcolor{gubgray}}},
+begin table=\begin{longtable},
+end table=\end{longtable},
+]{Files/gradingPolicy.csv}

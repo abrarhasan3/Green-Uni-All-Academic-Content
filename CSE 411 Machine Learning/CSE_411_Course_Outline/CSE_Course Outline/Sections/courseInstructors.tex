@@ -1,0 +1,20 @@
+\section{Course Instructors}
+
+%%%%%%%%%%%%% DO NOT MODIFY THE FOLLOWING CODE %%%%%%%%%%%%%%%%
+\pgfplotstabletypeset[col sep=comma,
+ignore chars={\"},
+column type=l,
+trim cells=true,
+header=true, 
+columns={Section, Instructor's Name, Instructor's Office Room, Username}, 
+columns/Section/.style={column type=p{3cm},string type, column name = {\textbf{Section}}},
+columns/Instructor's Name/.style={column type=m{6cm},string type, column name = {\textbf{Name}}},
+columns/Instructor's Office Room/.style={column type=m{0.75cm},string type, column name = {\textbf{Office}}, column type={c}},
+columns/Username/.style={column type=m{6.25cm},string type, column name = {\textbf{Email}}},
+columns/Classroom/.style={column type=p{1.5cm},string type},
+every head row/.style={before row={\toprule}, after row=\midrule}, 
+every last row/.style={after row=\bottomrule},
+every even row/.style={before row={\rowcolor{gubgray}}},
+begin table=\begin{longtable},
+end table=\end{longtable},
+]{\facultyResponseFileName}

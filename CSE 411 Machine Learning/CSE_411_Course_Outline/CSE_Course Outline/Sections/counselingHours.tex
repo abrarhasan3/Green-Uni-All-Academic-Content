@@ -1,0 +1,20 @@
+\section{Counseling Hours}
+
+%%%%%%%%%%%%% DO NOT MODIFY THE FOLLOWING CODE %%%%%%%%%%%%%%%%
+\pgfplotstabletypeset[col sep=comma,
+ignore chars={\"},
+column type=l,
+trim cells=true,
+header=true, 
+columns={Section, Weekday of Counseling Session 1, Counseling Session 1 Time Slot, Weekday of Counseling Session 2, Counseling Session 2 Time Slot}, 
+columns/Section/.style={column type=p{3cm},string type, column name = {\textbf{Section}}},
+columns/Weekday of Counseling Session 1/.style={column type=m{2.75cm},string type, column name = {\textbf{Weekday}}},
+columns/Counseling Session 1 Time Slot/.style={column type=m{5cm},string type, column name = {\textbf{Time}}, column type = {c}},
+columns/Weekday of Counseling Session 2/.style={column type=m{2.75cm},string type, column name = {\textbf{Weekday}}},
+columns/Counseling Session 2 Time Slot/.style={column type=m{5cm},string type, column name = {\textbf{Time}}, column type = {c}},
+every head row/.style={before row={\toprule}, after row=\midrule}, 
+every last row/.style={after row=\bottomrule},
+every even row/.style={before row={\rowcolor{gubgray}}},
+begin table=\begin{longtable},
+end table=\end{longtable},
+]{\facultyResponseFileName}

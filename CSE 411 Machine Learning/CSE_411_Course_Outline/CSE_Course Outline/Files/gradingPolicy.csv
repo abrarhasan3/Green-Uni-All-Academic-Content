@@ -1,0 +1,11 @@
+Marks Obtained,Letter Grade,Numerical Equivalent,Definition
+80\% and above,A+,4.00,Excellent
+75\% \textless 80\%,A,3.75,Excellent
+70\%  \textless 75\%,A-,3.50,Very Good
+65\%  \textless 70\%,B+,3.25,Good
+60\%  \textless 65\%,B,3.00,Good
+55\%  \textless 60\%,B-,2.75,Good
+50\%  \textless 55\%,C+,2.50,Average
+45\%  \textless 50\%,C,2.25,Average
+40\%  \textless 45\%,D,2.00,Below Average
+below 40\%,F,0.00,Failing
